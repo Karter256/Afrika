@@ -9,6 +9,7 @@
     --color-primary: #1f1e1e;
     --background-color: #fff;
     --accent-color: #886239;
+    --secondary--color: #D9D9DE;
 }
 
 body{
@@ -114,4 +115,25 @@ padding: 0 10px;
 .header__arrow{
     text-align: center;
     margin-bottom: 15px;
+}
+/* _____________________________Directions grid____________________________ */
+.directions{
+    padding: 100px 0;
+}
+
+.directons__inner{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 32px;
+}
+
+.directions__img{
+display: block;
+}
+
+.directions__text{
+    font-size: 16px;
+    border: 1px solid var(--secondary--color);
+    border-top: none;
+    padding: 10px 19px 14px;
 }
