@@ -29,6 +29,12 @@ max-width: 1140px;
 margin: 0 auto;
 padding: 0 10px;
 }
+.title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 130%;
+}
 
 /* _____________________________Header section_______________________________________ */
 
@@ -136,4 +142,34 @@ display: block;
     border: 1px solid var(--secondary--color);
     border-top: none;
     padding: 10px 19px 14px;
+}
+
+/*__________________________________Travel-info_____________________________________  */
+
+.travel-info{
+    background-image: url(../images/travel-info-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 30px 0 50px;
+}
+
+.travel-info__title{
+    color: var(--background-color);
+    margin-bottom: 50px;
+}
+
+.travel-info__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 54px 67px;
+}
+
+.travel-info__img{
+    margin-bottom: 15px;
+}
+.travel-info__text{
+    color: var(--background-color);
+    font-size: 16px;
+    line-height: 130%;
 }
