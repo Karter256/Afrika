@@ -241,3 +241,42 @@ line-height: 130%;
 .map__title{
     margin-bottom: 46px;
 }
+
+/*_________________________________ About_________________________________________ */
+
+.about{
+    padding-bottom: 100px;
+}
+
+.about__inner{
+    display: grid;
+    grid-template-columns: 448px 640px;
+    grid-gap: 32px;
+}
+
+.about__title{
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.about__text{
+margin-bottom: 34px;
+}
+
+.about__link{
+    text-decoration: underline;
+    font-style: 16px;
+    line-height: 19px;
+    color: #c4c4c4;
+}
+
+.about__popup{
+    background-image: url(../images/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
