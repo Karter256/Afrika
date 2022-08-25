@@ -243,6 +243,7 @@ line-height: 130%;
 .map{
     padding-bottom: 100px;
 }
+
 .map__title{
     margin-bottom: 46px;
 }
@@ -510,7 +511,7 @@ text-decoration: underline;
 }
 .footer__address-text {
 }
-.footer-contactacts {
+.footer-contacts {
     width: 210px;
 }
 .footer__phone {
@@ -521,6 +522,8 @@ text-decoration: underline;
 
 /* _________________________________________Adaptive_____________________________________________ */
 
+
+            /* ________________________________1140________________________________________ */
 @media(max-width:1140px){
     .directons__inner{
         grid-template-columns: repeat(3,1fr);
@@ -531,15 +534,134 @@ text-decoration: underline;
         width: 100%;
     }
 
+    .about__inner{
+        grid-gap: 20px;
+        grid-template-columns: 1fr 2fr;
+    }
 
+    .gallery__item-inner{
+        grid-template-columns: repeat(2, 1fr);    
+    }
+
+    .gallery__item-img{
+        width: 100%;
+    }
 }
+
+            /* ________________________________990________________________________________ */
+
+@media(max-width:990px){
+    .popular__link{
+        min-height: 200px;
+    }
+
+    .popular__items{
+        grid-gap: 10px;
+    }
+
+    .tour__info{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px 15px;
+    }
+}
+
+            /* ________________________________800________________________________________ */
 
  @media(max-width:800px){
 
     .header__phone span{
         display: none;
-    };
- }
+    }
+
+
+    .travel-info__items{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+    }
+
+    .popular__link:nth-child(3),
+    .popular__link:nth-child(6){
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .popular__items{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .popular__link{
+        min-height: 320px;
+    }
+   
+
+    .map__iframe{
+        height: 400px;
+    }
+    .about__inner{
+        grid-template-columns: 1fr;
+    }
+    .about__popup{
+        min-height: 400px;
+    }
+    .map,
+    .about,
+    .gallery{
+        padding-bottom: 50px;
+    }
+
+    .tour{
+        padding: 50px 0;
+    }
+
+    .tour__box{
+        column-count: 1;
+    }
+
+    .tour__title{
+        margin-bottom: 40px;
+    }
+    .tour__info{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .popular,
+    .booking{
+        padding: 50px 0;
+    }
+
+    .booking__input{
+        width: 100%;
+    }
+
+    .booking__label{
+        margin-top: -192px;
+        margin-left: 50px;
+        width: 100%;
+    }
+    .booking__btn{
+        margin: 0 auto;
+    }
+
+
+    .footer{
+        padding: 50px 0;
+    }
+    .footer__logo{
+        margin-bottom: 40px;
+    }
+ 
+    .footer__box{
+        display: block;
+        text-align: center;
+    }
+
+    .footer__info,
+    .footer-contacts,
+    .footer__address{
+        margin: 0 auto 25px;
+    }
+}
+
+            /* ________________________________560________________________________________ */
 
  @media(max-width:560px){
 
@@ -627,6 +749,53 @@ text-decoration: underline;
     .directions{
         padding: 50px 0;
     }
- }
-/* Resume 2:45:00 */
 
+    .travel-info__items{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+
+    .title{
+        font-size: 28px;
+    }
+    .popular__items{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .gallery__item-inner{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .gallery__title{
+        width: 100%;
+        text-align: left;
+    }
+    .gallery__top{
+        flex-wrap: wrap;
+    }
+
+    .booking__btn{
+        width: 100%;
+    }
+
+}
+
+
+             /* ________________________________460________________________________________ */
+ @media(max-width:460px){
+
+    .directons__inner,
+    .travel-info__items,
+    .tour__info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+ }
+
+            /* ________________________________340________________________________________ */
+
+ @media(max-width:340px){
+
+   .about__popup{
+    min-height: 280px;
+   } 
+ }
